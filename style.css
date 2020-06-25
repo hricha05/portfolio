@@ -71,7 +71,8 @@ button {
 a,
 button,
 .name {
-  color: green
+  color: green;
+  font-weight: 400;
 }
 
 .navigation-menu-item {
