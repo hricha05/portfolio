@@ -6,6 +6,28 @@
   font-weight: 300;
 }
 
+@media only screen and (max-width: 425px) {
+  .navigation-menu {
+    display: none;
+  }
+}
+
+@media only sccreen and (max-height: 450px) {
+  .slide-menu {
+    padding-top: 15px;
+  }
+
+  .slide-menu a {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .slide-menu {
+    display: none;
+  }
+}
+
 nav {
   display: block;
   color: #ffffff;
@@ -19,6 +41,8 @@ ul {
   align-content: flex-start;
   justify-content: flex-end;
   list-style-type: none;
+  margin-top: 1rem;
+  margin-right: 0.5rem;
 }
 
 li {
@@ -36,8 +60,8 @@ li:last-child {
   /* margin-left: 1rem; */
 }
 
-a {
-  font-size: 1.3rem;
+a, span {
+  font-size: 1.1rem;
   font-weight: 300;
   letter-spacing: 0.5ex;
   text-decoration: none;
@@ -69,14 +93,46 @@ button {
 }
 
 a,
-button,
-.name {
+button, 
+span {
   color: green;
   font-weight: 400;
 }
 
 .navigation-menu-item {
   position: relative;
+}
+
+.slide-menu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    text-align:center;
+}
+
+.slide-menu a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+
+}
+
+.slide-menu, .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 1.5rem;
+  margin-left: 50px;
 }
 
 .box {
@@ -88,6 +144,12 @@ button,
   font-weight: 350;
   text-align: center;
   margin-top: 13rem;
+}
+
+.name {
+  margin: 0;
+  padding: 0;
+  font-size: 2.5rem;
 }
 
 .homepage-caption {
