@@ -11,6 +11,10 @@
   .homepage-title { padding-top: 1rem }
 }
 
+@media only screen and (min-width: 768px) {
+  .open-slide { display: none }
+}
+
 nav {
   display: block;
   color: #ffffff;
@@ -93,14 +97,6 @@ a:hover, button:hover {
   opacity: 50%;
 }
 
-.box {
-  background-color: blue;
-}
-
-section {
-  display: block; 
-}
-
 button {
   font-size: 1.1rem;
   padding: 1.2rem;
@@ -119,8 +115,6 @@ span {
 
 .homepage-title {
   font-size: 2.5rem;
-  font-weight: 350;
-  text-align: center;
   padding-top: 6rem;
 }
 
@@ -132,12 +126,26 @@ span {
 
 .homepage-caption {
   font-size: 4rem;
-  font-family: 'Roboto', sans-serif;
+}
+
+.homepage-title, .homepage-caption {
   font-weight: 350;
   text-align: center;
 }
 
 .button {
-  /* margin-top: 3rem; */
+  margin-top: 2rem;
   padding: 1.2rem;
+}
+
+.subheader {
+  padding-bottom: 0.2rem;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.text {
+  padding: 1rem;
+  align-items: center;
+  letter-spacing: 0.07rem;
 }
