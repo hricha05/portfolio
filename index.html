@@ -9,63 +9,58 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="/style.css">
 
+  
+
   <title>Harun Richards</title>
 </head>
 <body>
-  <!--Navigation menu for mobile screens-->
-  <div class="container-fluid"></div>
-  <nav id="sidenav" class="slide-menu">
-    <ul>
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <nav class="row navbar">
+    <div class="open-slide">
+      <a href="#" onclick="openSlideMenu()">
+        <svg width="35" height="35">
+          <path d="M0,5 35,5" stroke="#008000" stroke-width="5"/>
+          <path d="M0,14 35,14" stroke="#008000" stroke-width="5" />
+          <path d="M0,23 35,23" stroke="#008000" stroke-width="5" />
+        </svg>
+      </a>
+    </div>
+
+    <ul class="navbar-nav">
       <li><a href="#">About</a></li>
       <li><a href="#">Portfolio</a></li>
       <li><a href="#">Contact</a></li>
     </ul>
   </nav>
-  <span class="closebtn" onclick="openNav()">&#9776;</span>
-  <!--END-->
 
-  <!--Navigation menu for tablet and laptop screen-->
-  <nav class="row nav-menu-full">
-    <ul class="navigation-menu">
-      <li class="navigation-menu-item" id="navigation-menu-item-1"><a href="#">About</a></li>
-      <li class="navigation-menu-item" id="navigation-menu-item-2"><a href="#">Portfolio</a></li>
-      <li class="navigation-menu-item" id="navigation-menu-item-3"><a href="#">Contact</a></li>
-    </ul>
-  </nav>
-</div>
-  <!--End of Navigation menu-->
+  <div id="slide-menu" class="side-nav">
+    <a href="" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+    <a href="">About</a>
+    <a href="">Portfolio</a>
+    <a href="">Contact</a>
+  </div>
+
   <!-- main content container-->
-  <div class="container-fluid">
-    <section class="page-section box-row">
+  <main id="main" class="container-fluid row">
+    <section class="row">
       <div class="col-md-12">
-        <h2 class="homepage-title start-xs">Hi, my name is <span class="name">Harun Richards</span></h2>
+        <h2 class="homepage-title">Hi, my name is <span class="name">Harun Richards</span></h2>
         <h1 class="homepage-caption">I am a Frontend Web Developer</h1>
       </div>
-      <div class="col-md-2-offset button">
+      <div class="col-md-4-offset button">
         <button type="submit">Learn More</button>
       </div>
     </section>
     <!--End of main content container-->
-    <section class="page-section box-row ">
+    <section id="about" class="box">
       <h1>About</h1>
     </section>
-    <section class="page-section box-row">
+    <section id="projects" class="box">
       <h1>Projects</h1>
     </section>
-    <section class="page-section box-row">
+    <section id="contact" class="box">
       <h1>Contact</h1>
     </section>
-  </div>
-
-  <script>
-    function openNav() {
-      document.getElementById("sideNav").style.width = "100%";
-    }
-
-    function closeNav() {
-      document.getElementById("sideNav").style.width = "0";
-    }
-  </script>
+  </main>
 </body>
+<script src="/app.js"></script>
 </html>
