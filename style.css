@@ -113,6 +113,12 @@ span {
   font-weight: 400;
 }
 
+article .project {
+  border: 1px solid black;
+  width: 425px;
+  height: 425px;
+}
+
 .homepage-title {
   font-size: 2.5rem;
   padding-top: 6rem;
@@ -148,4 +154,8 @@ span {
   padding: 1rem;
   align-items: center;
   letter-spacing: 0.07rem;
+}
+.twitter-follow-button {
+  margin-top: 2rem;
+  text-align: center;
 }
