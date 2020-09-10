@@ -120,17 +120,13 @@ span {
   font-weight: 400;
 }
 
-article {
-  /* width: 80%; */
-}
-
 h1 {
   text-align: center;
 }
 
 section {
   margin-top: 2rem;
-  margin-bottom: 4rem;
+  margin-bottom: 5rem;
 }
 
 footer {
@@ -160,7 +156,8 @@ footer {
 }
 
 .button {
-  margin-top: 2rem;
+  margin-top: 2.5rem;
+  margin-left: 0;
   padding: 1.2rem;
   /* border: 1px solid black; */
 }
