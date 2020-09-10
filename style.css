@@ -1,18 +1,24 @@
 * {
   margin: 0 auto;
-  padding: 0px;
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
-  font-weight: 300;
+  /* font-weight: 300; */
 }
 
 @media only screen and (max-width: 425px) {
-  .navbar-nav { display: none }
-  .homepage-title { padding-top: 1rem }
+  .navbar-nav {
+    display: none
+  }
+
+  .homepage-title {
+    padding-top: 1rem
+  }
 }
 
 @media only screen and (min-width: 768px) {
-  .open-slide { display: none }
+  .open-slide {
+    display: none
+  }
 }
 
 nav {
@@ -32,13 +38,13 @@ nav {
   justify-content: flex-end;
   list-style-type: none;
   margin-top: 1rem;
-  margin-right: 0.5rem;
+  margin-right: .5rem;
 }
 
-.navbar li {
+.navbar li,
+.social-icons li {
   font-family: roboto;
-  padding: 0.5rem;
-  margin: 0;
+  margin: .5rem;
 }
 
 .open-slide {
@@ -74,24 +80,25 @@ nav {
 
 .side-nav .btn-close {
   position: absolute;
-  top:0;
+  top: 0;
   right: 1rem;
   margin-left: 2rem;
   font-size: 2rem;
 }
 
-a, span {
+a,
+span {
   font-size: 1.1rem;
   font-weight: 300;
-  letter-spacing: 0.5ex;
+  letter-spacing: 0.5rem;
   text-align: center;
   text-decoration: none;
   cursor: pointer;
   padding: 1rem;
-  margin: 0;
 }
 
-a:hover, button:hover {
+a:hover,
+button:hover {
   font-weight: 400;
   border-bottom: 2px solid green;
   opacity: 50%;
@@ -107,19 +114,37 @@ button {
 }
 
 a,
-button, 
+button,
 span {
   color: green;
   font-weight: 400;
 }
 
-article .project {
-  border: 1px solid black;
-  width: 425px;
-  height: 425px;
+article {
+  /* width: 80%; */
 }
 
-.homepage-title {
+h1 {
+  text-align: center;
+}
+
+section {
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+
+footer {
+  background-color: #f2f2f2
+}
+
+.header-title,
+.header-caption {
+  font-weight: 350;
+  text-align: center;
+  /* border: 1px solid black; */
+}
+
+.header-title {
   font-size: 2.5rem;
   padding-top: 6rem;
 }
@@ -130,32 +155,107 @@ article .project {
   font-size: 2.5rem;
 }
 
-.homepage-caption {
+.header-caption {
   font-size: 4rem;
-}
-
-.homepage-title, .homepage-caption {
-  font-weight: 350;
-  text-align: center;
 }
 
 .button {
   margin-top: 2rem;
   padding: 1.2rem;
+  /* border: 1px solid black; */
 }
 
-.subheader {
-  padding-bottom: 0.2rem;
-  text-align: center;
-  text-decoration: underline;
-}
-
-.text {
+.about-text {
   padding: 1rem;
-  align-items: center;
+  /* align-items: center; */
+  text-align: center;
   letter-spacing: 0.07rem;
+  /* border: 1px solid black; */
 }
+
+.projects {
+  margin: 0 auto;
+}
+
+.projects-header {
+  font-size: 40px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700px;
+  text-align: center;
+  padding-bottom: 3.2rem;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-radius: 2%;
+  /* border: 2px solid whitesmoke; */
+  border-top: 1px solid whitesmoke;
+  border-right: 1px solid whitesmoke;
+  border-bottom: 2px solid whitesmoke;
+  border-right: 2px solid whitesmoke;
+  background-color: white;
+}
+
+.project-card-header {
+  padding: 20px;
+}
+
+.project-card-thumbnail {
+  align-self: center;
+  aspect-ratio: 1 / 1;
+  width: 80%;
+  height: 80%;
+  border: 1px solid palegreen;
+  background-color: palegreen;
+}
+
+.project-card-text {
+  margin: 0 auto;
+  padding: 20px;
+  /* border: 1px solid black; */
+}
+
 .twitter-follow-button {
   margin-top: 2rem;
   text-align: center;
+}
+
+a.github-logo-link:hover {
+  border-bottom: 0;
+}
+
+.github-logo {
+  height: 35px;
+  margin-top: 1.5rem;
+  border-bottom: 0;
+}
+
+.footer-text {
+  padding: 30px;
+  text-align: center;
+}
+
+a.site-link {
+  font-size: 13px;
+  padding: 0;
+  letter-spacing: 0.2rem;
+  border-bottom: 2px dashed lightgreen;
+}
+
+a.site-link:hover {
+  border-bottom: 0
+}
+
+.social-icons {
+  line-height: 1.8;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  vertical-align: baseline;
+}
+
+.social-icons li {
+  display: inline;
 }
